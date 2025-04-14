@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Amado - Web Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="profile-img-container">
+            <img src="profile.jpg" alt="Christian Amado" class="profile-img">
+        </div>
+        <div class="header-text">
+            <h1>Christian Amado</h1>
+            <p class="objective">Web Designer / Desenvolvimento / Front-end jr.</p>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="about-me">
+                <p>Olá! meu nome é Christian, tenho 28 anos. Estou sempre em busca de inovação e aprendizado para trazer soluções modernas e eficazes aos projetos que assumo.</p>
+            </div>
+
+            <div class="education">
+                <h2>Formação Acadêmica</h2>
+                <div class="education-item">
+                    <h3>Marketing</h3>
+                    <p>Faculdade Estácio 2020/2023</p>
+                </div>
+                <div class="education-item">
+                    <h3>Técnico em Informática</h3>
+                    <p>ETEC 2015/2017</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="portfolio-section">
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-card" onclick="openModal('https://via.placeholder.com/800x600')">
+                    <img src="https://via.placeholder.com/400x300" alt="Projeto 1" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Site Institucional</h3>
+                        <p>WordPress, Elementor</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-card" onclick="openModal('https://via.placeholder.com/800x600')">
+                    <img src="https://via.placeholder.com/400x300" alt="Projeto 2" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Landing Page</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-card" onclick="openModal('https://via.placeholder.com/800x600')">
+                    <img src="https://via.placeholder.com/400x300" alt="Projeto 3" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>E-commerce</h3>
+                        <p>WordPress, WooCommerce</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h2>Habilidades</h2>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fab fa-wordpress"></i> WordPress</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fas fa-camera-retro"></i> Photoshop</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h3 class="exp-title">Experiência Profissional</h3>
+
+                <div class="job">
+                    <h4>Analista em Marketing</h4>
+                    <p><em>Zanardi Empreendimentos / 2024</em></p>
+                    <ul>
+                        <li>Campanha Meta Ads e Google Ads</li>
+                        <li>Produção de Landing Pages</li>
+                        <li>Lançamentos de Loteamentos</li>
+                        <li>Análise de Campanhas e métricas</li>
+                        <li>Produção de Vídeos e Artes Promocionais/Institucionais</li>
+                        <li>Atendimento SDR</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h4>Analista em Marketing</h4>
+                    <p><em>Maxxi Tacos / 2023</em></p>
+                    <ul>
+                        <li>Análise de dados de tráfego de e-commerce</li>
+                        <li>Elaboração de Relatórios com Looker Studio</li>
+                        <li>Análise de Relatórios Power BI</li>
+                        <li>Estudo de métricas SEO e comportamento do cliente</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h4>Gestor em Marketing</h4>
+                    <p><em>Hotel Villa Santo Agostinho / 2020 - 2023</em></p>
+                    <ul>
+                        <li>Campanhas Meta Ads e Google Ads para reservas do Hotel</li>
+                        <li>Produção de Landing Pages em Wordpress/Elementor</li>
+                        <li>Email Marketing e Endomarketing</li>
+                        <li>Criação de Animações com a Recreação</li>
+                        <li>Produção de Artes Promocionais</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h4>Assistente em Marketing</h4>
+                    <p><em>Dokar Veículos / 2016 - 2017</em></p>
+                    <ul>
+                        <li>Campanhas Meta Ads para venda de Veículos</li>
+                        <li>Endomarketing</li>
+                        <li>Produção de Artes Promocionais</li>
+                        <li>Produção de Vídeos Institucionais</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2025 Christian Amado. Todos os direitos reservados.</p>
+        <a href="#" class="download-btn">Download CV (PDF)</a>
+    </footer>
+
+            <button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
+        <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 1.2rem;
+        }
+        </style>
+        <script>
+        window.onscroll = function() {
+            document.getElementById('backToTop').style.opacity = (window.scrollY > 300) ? "1" : "0";
+        };
+        document.getElementById('backToTop').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        </script>
+
+    <script>
+        // Modal functionality
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

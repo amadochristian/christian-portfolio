@@ -1,0 +1,397 @@
+:root {
+    --primary-color: #ffb33e;
+    --secundary-color: #2b2b2b;
+    --dark-bg: #2b2b2b;
+    --light-bg: #F8F3E8;
+    --gray-bg: #d9d9d9ad;
+    --text-dark: #333;
+    --text-light: #777;
+    --white: #fff;
+    --border-radius: 15px;
+    --box-shadow: 0 5px 5px rgba(0, 0, 0, 0.068);
+}
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+}
+
+/* Header Styles */
+header {
+    height: 250px;
+    background: var(--dark-bg);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-img-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    margin-left: 40px;
+    z-index: 2;
+    line-height: 0.8;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.objective {
+    color: var(--white);
+    font-style: italic;
+    font-weight: 300;
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Main Content Layout */
+.main-container {
+    display: flex;
+    padding: 40px 10%;
+    gap: 40px;
+}
+
+/* Left Sidebar */
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: fit-content;
+}
+
+.about-me {
+    margin-bottom: 30px;
+}
+
+.about-me p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--secundary-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    flex-grow: 1;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.portfolio-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.portfolio-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 40px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.skill-percent {
+    color: var(--text-light);
+}
+
+.skill-bar {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Experience Section */
+.exp-title {
+    font-size: 1.8rem;
+    color: var(--secundary-color);
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.exp-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+}
+
+.job {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 25px;
+}
+
+.job h4 {
+    font-size: 1.2rem;
+    color: var(--secundary-color);
+    margin-bottom: 5px;
+}
+
+.job p em {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.job ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.job li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Modal for Portfolio Images */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5vh;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--white);
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-bg);
+    color: var(--white);
+    padding: 30px 10%;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.download-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 179, 62, 0.3);
+}
+
+.download-btn:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 179, 62, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .sidebar {
+    width: auto;
+}
+
+    .profile-img-container {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .header-text {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .objective {
+        font-size: 1rem;
+    }
+
+    .main-container {
+        padding: 30px 20px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
