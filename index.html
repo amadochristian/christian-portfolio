@@ -37,38 +37,6 @@
                     <p>ETEC 2015/2017</p>
                 </div>
             </div>
-        </aside>
-
-        <main class="portfolio-section">
-            <div class="portfolio-grid">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-card" onclick="openModal('/img/edina-lopes-teste-aberta.png')">
-                    <img src="/img/edina-lopes-teste.png" alt="Projeto 1" class="portfolio-img">
-                    <div class="portfolio-info">
-                        <h3>Site Institucional</h3>
-                        <p>WordPress, Elementor</p>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-card" onclick="openModal('https://via.placeholder.com/800x600')">
-                    <img src="https://via.placeholder.com/400x300" alt="Projeto 2" class="portfolio-img">
-                    <div class="portfolio-info">
-                        <h3>Landing Page</h3>
-                        <p>HTML, CSS, JavaScript</p>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-card" onclick="openModal('https://via.placeholder.com/800x600')">
-                    <img src="https://via.placeholder.com/400x300" alt="Projeto 3" class="portfolio-img">
-                    <div class="portfolio-info">
-                        <h3>E-commerce</h3>
-                        <p>WordPress, WooCommerce</p>
-                    </div>
-                </div>
-            </div>
-
             <div class="skills-section">
                 <h2>Habilidades</h2>
                 
@@ -112,7 +80,69 @@
                     </div>
                 </div>
             </div>
+        </aside>
 
+        <main class="portfolio-section">
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-card">
+                    <a href="https://edinalopes.com/home/"><img src="/img/edina-lopes.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>Site Institucional</h3>
+                        <p>WordPress, Elementor</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-card">
+                    <a href="https://hvsa.com.br/"><img src="/img/hvsa.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>Site de Hotel + Motor de Busca</h3>
+                        <p>WordPress, Elementor</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-card">
+                    <a href="https://starpuxadoresloja.com.br/catalogo/teste-json/catalogo.html"><img src="/img/catalogo-interativo.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>Catálogo Interativo</h3>
+                        <p>Javascript, Html e Css</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-card">
+                    <a href="https://www.starpuxadores.com.br/"><img src="/img/e-commerce.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>Configuração de E-commerce</h3>
+                        <p>Tray E-commerce</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-card">
+                    <a href="https://facilitaservice.com.br/"><img src="/img/facilita.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>site Institucional</h3>
+                        <p>Wordpress, Elementor</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-card">
+                    <a href="https://solasolempreendimentos.com.br/"><img src="/img/sol-a-sol.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>Site de Cadastro de Empreendimentos</h3>
+                        <p>Wordpress, Elementor</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-card">
+                    <a href="https://lookerstudio.google.com/u/0/reporting/2ebd8ed3-d24b-4775-99de-625a7d357d98/page/p_vg5vcnv5qd"></a> <img src="/img/looker-studio.jpg" alt="Projeto 1" class="portfolio-img"></a>
+                    <div class="portfolio-info">
+                        <h3>Painel Dinâmico Informativo</h3>
+                        <p>Looker Studio</p>
+                    </div>
+                </div>
+
+                
+            </div> 
             <div class="experience-section">
                 <h3 class="exp-title">Experiência Profissional</h3>
 
@@ -162,14 +192,8 @@
                         <li>Produção de Vídeos Institucionais</li>
                     </ul>
                 </div>
-            </div>
+            
         </main>
-    </div>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
     </div>
 
     <footer>
@@ -181,55 +205,5 @@
         <p>© 2025 Christian Amado. Todos os direitos reservados.</p>
         <a href="https://drive.google.com/file/d/1xoHTGbeAFzBXcrK2fTZnjXcKyk-lES-c/view?usp=sharing" class="download-btn">Download CV (PDF)</a>
     </footer>
-
-            <button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
-        <style>
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s;
-            font-size: 1.2rem;
-        }
-        </style>
-        <script>
-        window.onscroll = function() {
-            document.getElementById('backToTop').style.opacity = (window.scrollY > 300) ? "1" : "0";
-        };
-        document.getElementById('backToTop').onclick = function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-        </script>
-
-    <script>
-        // Modal functionality
-        function openModal(imgSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            
-            modal.style.display = "block";
-            modalImg.src = imgSrc;
-        }
-
-        function closeModal() {
-            document.getElementById('imageModal').style.display = "none";
-        }
-
-        // Close modal when clicking outside the image
-        window.onclick = function(event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
